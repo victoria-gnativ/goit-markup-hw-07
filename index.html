@@ -15,7 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
@@ -118,33 +119,33 @@
       </section>
 
       <!--Діяльність компанії-->
-      <section class="section offer">
+      <section class="section section-offer">
         <div class="container">
           <h2 class="section-title">Чим ми займаємось</h2>
-          <ul class="list image">
-            <li class="list-image">
+          <ul class="list offer-items">
+            <li class="offer-image">
               <img
                 src="./images/img-5.jpg"
                 alt="Людина друкує код на клавіатурі"
                 width="370"
               />
-              <h3 class="image-title">Десктопні додатки</h3>
+              <h3 class="offer-img-title">Десктопні додатки</h3>
             </li>
-            <li class="list-image">
+            <li class="offer-image">
               <img
                 src="./images/img-6.jpg"
                 alt="Людина тримає телефон"
                 width="370"
               />
-              <h3 class="image-title">Мобільні додатки</h3>
+              <h3 class="offer-img-title">Мобільні додатки</h3>
             </li>
-            <li class="list-image">
+            <li class="offer-image">
               <img
                 src="./images/img-7.jpg"
                 alt="Людина тримає планшет"
                 width="370"
               />
-              <h3 class="image-title">Дизайнерські рішення</h3>
+              <h3 class="offer-img-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -153,8 +154,8 @@
       <section class="section team-members">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team list">
-            <li class="team-image">
+          <ul class="team-list list">
+            <li class="team-list-image">
               <div class="team-card">
                 <div class="team-card-img">
                   <img
@@ -202,7 +203,7 @@
               </div>
             </li>
 
-            <li class="team-image">
+            <li class="team-list-image">
               <div class="team-card">
                 <div class="team-card-img">
                   <img
@@ -250,7 +251,7 @@
               </div>
             </li>
 
-            <li class="team-image">
+            <li class="team-list-image">
               <div class="team-card">
                 <div class="team-card-img">
                   <img
@@ -298,7 +299,7 @@
               </div>
             </li>
 
-            <li class="team-image">
+            <li class="team-list-image">
               <div class="team-card">
                 <div class="team-card-img">
                   <img
@@ -352,44 +353,44 @@
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list list">
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106" height="60">
+            <li class="clients-list-item">
+              <a href="" class="clients-item-link link">
+                <svg class="clients-link-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Union"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106" height="60">
+            <li class="clients-list-item">
+              <a href="" class="clients-item-link link">
+                <svg class="clients-link-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-group"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106" height="60">
+            <li class="clients-list-item">
+              <a href="" class="clients-item-link link">
+                <svg class="clients-link-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Object"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106" height="60">
+            <li class="clients-list-item">
+              <a href="" class="clients-item-link link">
+                <svg class="clients-link-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Foster"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106" height="60">
+            <li class="clients-list-item">
+              <a href="" class="clients-item-link link">
+                <svg class="clients-link-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106" height="60">
+            <li class="clients-list-item">
+              <a href="" class="clients-item-link link">
+                <svg class="clients-link-icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-company"></use>
                 </svg>
               </a>
@@ -402,13 +403,13 @@
     <footer class="footer">
       <div class="footer-wrap">
         <div class="container">
-          <div class="footer-address">
-            <a class="logo link" href="./index.html"
+          <div>
+            <a class="footer-logo logo link" href="./index.html"
               ><span class="logo-accent">Web</span>
-              <span class="studio">Studio</span></a
+              <span class="footer-logo-studio">Studio</span></a
             >
-            <address style="font-style: normal">
-              <ul class="address list">
+            <address class="footer-address" style="font-style: normal">
+              <ul class="footer-address-list list">
                 <li class="contacts">
                   <a href="" class="link location"
                     >м. Київ, пр-т Лесі Українки, 26
