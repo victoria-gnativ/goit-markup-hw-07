@@ -6,17 +6,26 @@
   padding-bottom: 60px;
 }
 
+.footer__logo {
+  display: flex;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
 
-.footer-address-list > .contacts {
+.footer__logo-studio {
+  color: var(--white-color);
+}
+
+.address__list > .contacts {
   margin-bottom: 9px;
 }
-.footer-address-list {
+.address__list {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
-.footer .footer-address-list .link {
+.footer .address__list .link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
@@ -28,7 +37,8 @@
 .footer .link:focus {
   color: var(--accent-color);
 }
-.footer .footer-address-list .location {
+
+.footer .address__list .location {
   color: var(--white-color);
   display: inline-block;
 }
@@ -41,30 +51,30 @@
   justify-content: space-between;
   
 }
-.footer-soc-container {
+.soc {
   height: 80px;
 }
-.footer-action {
+.soc__action {
   margin-bottom: 20px;
 }
 
-.footer-action-text {
+.soc__text {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.footer-soc-list {
+.soc__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-soc-item {
+.soc__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-soc-link {
+.soc__link{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,19 +87,25 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.footer-soc-icon {
+.soc__icon {
   fill: var(--white-color);
 }
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-}
+
 
 // FOOTER-SUBSCRIBE-FORM
 
-.subscribe-lable {
+.subscribe__wrap {
+  display: flex;
+  gap: 12px;
+}
+
+.subscribe__lable {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.2;
@@ -99,7 +115,7 @@
   color: var(--white-color);
 }
 
-.subscribe-input {
+.subscribe__input {
   padding: 15px;
   width: 358px;
   color: var(--white-color);
@@ -109,12 +125,7 @@
   border-radius: 4px;
 }
 
-.subscribe-action {
-  display: flex;
-  gap: 12px;
-}
-
-.subscribe-button {
+.subscribe__button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -134,5 +145,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
+}
+
+.subscribe__icon {
+  fill: var(--white-color);
 }
 

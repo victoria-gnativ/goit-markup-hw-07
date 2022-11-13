@@ -1,6 +1,45 @@
+/* ----------PORTFOLIO-FILTER------------ */
+
+.filter-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+
+  .filter-btn {
+  display: inline-block;
+  padding: 6px 22px;
+  background-color: var(--secondary-background-color);
+  color: var(--tittle-text-color);
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover , &:focus {
+    color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+}
 
 .project-card {
   border: 1px solid #eeeeee;
+
+  &:hover .project-card-overlay , 
+  &:focus .project-card-overlay {
+  transform: translateY(0);
+  }
 }
 
 .project-card-img {
@@ -27,86 +66,55 @@
   transition: transform 250ms ease;
 }
 
-.project-card:hover .project-card-overlay,
-.project-card:focus .project-card-overlay {
-  transform: translateY(0);
-}
-
 .project-link {
   display: block;
   text-decoration: none;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  &:hover , &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .project-card-text {
   padding: 20px 24px;
 }
 
-.projects-all .project-name {
+.projects-all {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .project-name {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--tittle-text-color);
 }
-.projects-all .project-type {
+  .project-type {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
 }
 
 .project-image {
   width: calc((100% - 60px) / 3);
 }
 
-.nav-botton {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
-.projects-all {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
 
-/* ----------PORTFOLIO-FILTER------------ */
 
-.list .filter-button {
-  display: inline-block;
-  padding: 6px 22px;
-  background-color: var(--secondary-background-color);
-  color: var(--tittle-text-color);
-  border: none;
-  border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.list .filter-button:hover,
-.list .filter-button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
+
+
+
+
+
 
