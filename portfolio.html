@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
@@ -23,8 +22,8 @@
     <!--Шапка сторінки-->
     <header class="header">
       <!--Меню навігації-->
-      <div class="container header-container">
-        <nav class="header-navigation">
+      <div class="container header__container">
+        <nav class="header__nav">
           <a class="logo link" href="./index.html"
             ><span class="logo-accent">Web</span>Studio</a
           >
@@ -33,7 +32,7 @@
               <a href="./index.html" class="link">Студія</a>
             </li>
             <li class="site-nav-item">
-              <a class="nav-link current link" href="./portfolio.html"
+              <a class="site-nav__link current link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -44,14 +43,14 @@
         </nav>
         <!--Контакти-->
         <ul class="contacts list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-item-link link">
-              <svg class="contacts-item-icon" width="16" height="12">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope-hover"></use></svg>info@devstudio.com</a>
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-item-link link"
-              ><svg class="contacts-item-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link"
+              ><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone1"></use>
               </svg>+38 096 111 11 11</a>
           </li>
@@ -63,21 +62,21 @@
     <main>
       <section class="section">
         <div class="container">
-          <ul class="nav-botton list">
+          <ul class="filter-btn-list list">
             <li>
-              <button class="filter-button" type="button">Усі</button>
+              <button class="filter-btn" type="button">Усі</button>
             </li>
             <li>
-              <button class="filter-button" type="button">Вебсайти</button>
+              <button class="filter-btn" type="button">Вебсайти</button>
             </li>
             <li>
-              <button class="filter-button" type="button">Додатки</button>
+              <button class="filter-btn" type="button">Додатки</button>
             </li>
             <li>
-              <button class="filter-button" type="button">Дизайн</button>
+              <button class="filter-btn" type="button">Дизайн</button>
             </li>
             <li>
-              <button class="filter-button" type="button">Маркетинг</button>
+              <button class="filter-btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <h1 class="section-title visually-hidden">Усі проекти</h1>
@@ -301,12 +300,12 @@
       <div class="footer-wrap">
         <div class="container">
           <div class="footer-address">
-            <a class="footer-logo logo link" href="./index.html"
+            <a class="footer__logo logo link" href="./index.html"
               ><span class="logo-accent">Web</span>
-              <span class="footer-logo-studio">Studio</span></a
+              <span class="footer__logo-studio">Studio</span></a
             >
-            <address class="footer-address" style="font-style: normal">
-              <ul class="footer-address-list list">
+            <address class="address" style="font-style: normal">
+              <ul class="address__list list">
                 <li class="contacts">
                   <a href="" class="link location"
                     >м. Київ, пр-т Лесі Українки, 26
@@ -325,53 +324,53 @@
               </ul>
             </address>
           </div>
-          <div class="footer-soc-container">
-            <div class="footer-action">
-              <h2 class="footer-action-text">ПРИЄДНУЙТЕСЬ</h2>
+          <div class="soc">
+            <div class="soc__action">
+              <h2 class="soc__text">ПРИЄДНУЙТЕСЬ</h2>
             </div>
-            <ul class="footer-soc-list list">
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link">
-                  <svg class="footer-soc-icon" width="20" height="20">
+            <ul class="soc__list list">
+              <li class="soc__item">
+                <a href="" class="soc__link link">
+                  <svg class="soc__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link">
-                  <svg class="footer-soc-icon" width="20" height="20">
+              <li class="soc__item">
+                <a href="" class="soc__link link">
+                  <svg class="soc__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link">
-                  <svg class="footer-soc-icon" width="20" height="20">
+              <li class="soc__item">
+                <a href="" class="soc__link link">
+                  <svg class="soc__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook-svg"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-soc-item">
-                <a href="" class="footer-soc-link link">
-                  <svg class="footer-soc-icon" width="20" height="20">
+              <li class="soc__item">
+                <a href="" class="soc__link link">
+                  <svg class="soc__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-subscribe-container">
-            <h2 class="subscribe-lable">Підпишіться на розсилку</h2>
-            <form class="subscribe-form">
-              <div class="subscribe-action">
+          <div class="subscribe">
+            <h2 class="subscribe__lable">Підпишіться на розсилку</h2>
+            <form class="subscribe__form">
+              <div class="subscribe__wrap">
                 <input
-                  class="subscribe-input"
+                  class="subscribe__input"
                   type="text"
                   placeholder="Email"
                 />
-                <button type="submit" class="subscribe-button">
+                <button type="submit" class="subscribe__button">
                   Підписатися
-                  <svg class="submit-button-icon" width="24" height="24">
+                  <svg class="subscribe__icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
                 </button>
