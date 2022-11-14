@@ -16,21 +16,22 @@
   color: var(--white-color);
 }
 
-.address__list > .contacts {
-  margin-bottom: 9px;
-}
+
 .address__list {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  > .contacts {
+  margin-bottom: 9px;
+}
 }
 
 .footer .address__list .link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 }
 
 .footer .link:hover,
@@ -75,8 +76,7 @@
 }
 
 .soc__link{
-  display: flex;
-  align-items: center;
+  @include flex;
   justify-content: center;
 
   width: 100%;
@@ -85,8 +85,7 @@
 
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 
   &:hover, &:focus {
     background-color: var(--accent-color);
@@ -126,8 +125,7 @@
 }
 
 .subscribe__button {
-  display: flex;
-  align-items: center;
+  @include flex;
   text-align: center;
   gap: 10px;
 

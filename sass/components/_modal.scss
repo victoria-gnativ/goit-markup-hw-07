@@ -7,14 +7,13 @@
   height: 100%;
   background: rgba(47, 48, 58, 0.8);
   transition-property: opacity, visibility;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  @include transition;
 
-.backdrop.is-hidden {
+  &.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
 }
 
 .modal {
@@ -30,10 +29,9 @@
 }
 
 .modal__button {
+  @include flex;
   position: absolute;
-  display: flex;
   justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   right: 8px;
@@ -91,15 +89,12 @@
   border-radius: 4px;
   outline: transparent;
   transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 
   &:focus {
   border-color: var(--accent-color);
 }
-  &:focus + .input-wrap__icon {
-  fill: var(--accent-color);
-}
+
 }
 
 .input-wrap__icon {
@@ -107,6 +102,10 @@
   left: 3%;
   top: 50%;
   transform: translateY(-50%);
+
+  .modal__input:focus + & {
+  fill: var(--accent-color);
+}
 }
 
 .modal__comment {
@@ -122,8 +121,7 @@
   resize: none;
 
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 
   &:focus {
   border-color: var(--accent-color);

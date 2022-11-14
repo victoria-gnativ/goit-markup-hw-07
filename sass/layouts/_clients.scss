@@ -11,29 +11,28 @@
 }
 
 .clients-list__link {
+  @include flex;
   width: 100%;
   height: 100%;
   border: 1px solid var(--clients-icon-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
+
     &:hover, &:focus {
       border-color: var(--accent-color);
     }
-    &:hover .clients-list__icon,
-    &:focus .clients-list__icon {
-    fill: var(--accent-color);
-}
 }
 
 .clients-list__icon {
   fill: var(--clients-icon-color);
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
+
+  .clients-list__link:hover  & ,
+  .clients-list__link:focus  & {
+    fill: var(--accent-color);
+}
 }
 
