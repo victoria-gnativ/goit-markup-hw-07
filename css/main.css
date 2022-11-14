@@ -56,7 +56,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .section.no-padding {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -96,7 +95,6 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -177,15 +175,15 @@ body {
 .modal__input:focus {
   border-color: var(--accent-color);
 }
-.modal__input:focus + .input-wrap__icon {
-  fill: var(--accent-color);
-}
 
 .input-wrap__icon {
   position: absolute;
   left: 3%;
   top: 50%;
   transform: translateY(-50%);
+}
+.modal__input:focus + .input-wrap__icon {
+  fill: var(--accent-color);
 }
 
 .modal__comment {
@@ -208,8 +206,8 @@ body {
 
 .checkbox {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   gap: 9px;
 }
@@ -219,18 +217,18 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
-.checkbox__input:checked + .checkbox__icon {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-}
 
 .checkbox__icon {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+}
+.checkbox__input:checked + .checkbox__icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
 }
 
 .checkbox__link {
@@ -288,7 +286,6 @@ body {
   display: flex;
   gap: 50px;
 }
-
 .site-nav .link {
   font-weight: 500;
   line-height: 1.14;
@@ -310,7 +307,6 @@ body {
   color: var(--tittle-text-color);
   text-decoration: none;
 }
-
 .site-nav__link.current {
   color: var(--accent-color);
 }
@@ -342,7 +338,6 @@ body {
 .contacts .link:hover, .contacts .link:focus {
   color: var(--accent-color);
 }
-
 .contacts.list {
   display: flex;
   align-items: center;
@@ -356,9 +351,6 @@ body {
   justify-content: center;
   transition-property: fill;
 }
-.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
-  fill: var(--accent-color);
-}
 
 .contacts__icon {
   margin-right: 10px;
@@ -366,6 +358,9 @@ body {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
+  fill: var(--accent-color);
 }
 
 /* -------------HERO------------- */
@@ -408,12 +403,6 @@ body {
   color: var(--white-color);
 }
 
-.features.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .card {
   width: 270px;
 }
@@ -444,6 +433,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.features.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .icon-antenna::before {
@@ -541,13 +535,6 @@ body {
   height: 44px;
 }
 
-.team-soc-icon {
-  fill: #afb1b8;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .team-soc-link {
   width: 100%;
   height: 100%;
@@ -561,6 +548,13 @@ body {
 }
 .team-soc-link:hover, .team-soc-link:focus {
   background-color: var(--accent-color);
+}
+
+.team-soc-icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
   fill: var(--white-color);
@@ -592,15 +586,15 @@ body {
 .clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color);
 }
-.clients-list__link:hover .clients-list__icon, .clients-list__link:focus .clients-list__icon {
-  fill: var(--accent-color);
-}
 
 .clients-list__icon {
   fill: var(--clients-icon-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-list__link:hover .clients-list__icon, .clients-list__link:focus .clients-list__icon {
+  fill: var(--accent-color);
 }
 
 /* ------------FOOTER-CONTACTS----------*/
@@ -620,14 +614,13 @@ body {
   color: var(--white-color);
 }
 
-.address__list > .contacts {
-  margin-bottom: 9px;
-}
-
 .address__list {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.address__list > .contacts {
+  margin-bottom: 9px;
 }
 
 .footer .address__list .link {
@@ -804,9 +797,6 @@ body {
 .project-card {
   border: 1px solid #eeeeee;
 }
-.project-card:hover .project-card-overlay, .project-card:focus .project-card-overlay {
-  transform: translateY(0);
-}
 
 .project-card-img {
   position: relative;
@@ -828,6 +818,9 @@ body {
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms ease;
+}
+.project-card:hover .project-card-overlay, .project-card:focus .project-card-overlay {
+  transform: translateY(0);
 }
 
 .project-link {
