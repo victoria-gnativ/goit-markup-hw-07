@@ -636,7 +636,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer__logo-studio {
+.logo-studio--white {
   color: var(--white-color);
 }
 
@@ -690,6 +690,7 @@ body {
 
 .soc__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
