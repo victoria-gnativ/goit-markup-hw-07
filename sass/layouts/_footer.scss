@@ -12,10 +12,9 @@
   margin-bottom: 20px;
 }
 
-.footer__logo-studio {
+.logo-studio--white {
   color: var(--white-color);
 }
-
 
 .address__list {
   font-size: 14px;
@@ -44,6 +43,7 @@
   display: inline-block;
 }
 
+
 // FOOTER-SOCIAL
 
 .footer-wrap > .container {
@@ -67,6 +67,7 @@
 }
 .soc__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
